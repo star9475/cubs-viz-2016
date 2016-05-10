@@ -1,0 +1,14 @@
+---
+title: "about"
+author: "Josh Starkey"
+date: "May 9, 2016"
+output: html_document
+---
+
+#### Cubs Wins and Run Differential progress versus records.
+
+This is a really really way too early visualiztion of the 2016 Cubs win totals versus the 2001 Seattle Mariners and the Run Differential versus the 1939 New York Yankees (The modern day records for each.)
+
+The graphs will update daily as Baseball Reference Updates.
+
+Comments: <star9475@hotmail.com>
