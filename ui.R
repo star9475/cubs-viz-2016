@@ -16,6 +16,9 @@ shinyUI(fluidPage(theme = "bootstrap.css",
   # Application title
   titlePanel("Way Too Early Graphs at History"),
   
+  fluidRow(
+  
+       includeMarkdown("about.Rmd"),
   # Sidebar with a slider input for number of bins 
 #  sidebarLayout(
     # sidebarPanel(
@@ -29,8 +32,13 @@ shinyUI(fluidPage(theme = "bootstrap.css",
     # Show a plot of the generated distribution
     mainPanel(
          plotlyOutput("winsPlot"),
+         fluidRow(column(5, textOutput("wins"))),
+         fluidRow(column(10, textOutput("winrate"))),
          hr(),
-         plotlyOutput("runsPlot")
+         plotlyOutput("runsPlot"),
+         fluidRow(column(5, textOutput("rundiffrate"))),
+         hr()
+         
     )
-#  )
+  ) # end fluid row
 ))

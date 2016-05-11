@@ -38,5 +38,8 @@ shinyServer(function(input, output) {
        
   })
   
+  output$wins <- renderText({ paste0('Wins to 116 :"', wins_to_go, '"') })
+  output$winrate <- renderText({ paste0('Wins % to get to 116: "', win_rate, '"') })
+  output$rundiffrate <- renderText({ paste0('Run diff rate to get to 411: "', rundiff_rate, '"') })
   
 })

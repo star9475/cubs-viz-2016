@@ -69,3 +69,11 @@ Yankees1939results<- get_cum_rundiff(Yankees1939results)
 wins_table <- rbind(Cubs2016results,Mariners2001results)
 rundiff_table <- rbind(Cubs2016results,Yankees1939results)
 
+games <- nrow(Cubs2016results)
+wins <- Cubs2016results$cum_wins[games]
+rundiff <- Cubs2016results$cum_rundiff[games]
+
+wins_to_go <- 116 - wins 
+win_rate <- (116 - wins) / (162 - games)
+rundiff_rate <- (411-rundiff) / (162 - games)
+
